@@ -7,7 +7,7 @@ from ask_sdk_model import Response
 
 import config
 
-openai.api_key = config.openai_api_key
+openai.api_key = "YOUR_API_KEY"
 
 def get_gpt_response(prompt):
     try:
