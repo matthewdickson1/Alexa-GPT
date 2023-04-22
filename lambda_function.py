@@ -37,7 +37,7 @@ class LaunchRequestHandler(AbstractRequestHandler):
         return handler_input.request_envelope.request.object_type == "LaunchRequest"
 
     def handle(self, handler_input: HandlerInput) -> Response:
-        speech_text = "Welcome to Cogno ai! Please ask a question by saying: Alexa, ask Chat GPT how Isaac Newton died"
+        speech_text = "Welcome to Chat G.P.T.! Please ask a question by saying: Alexa, ask Chat G.P.T. how Isaac Newton died"
         return handler_input.response_builder.speak(speech_text).response
 
 
@@ -58,7 +58,7 @@ class HelpIntentHandler(AbstractRequestHandler):
         return is_intent_name("AMAZON.HelpIntent")(handler_input)
 
     def handle(self, handler_input: HandlerInput) -> Response:
-        speech_text = "You can ask me anything! Just say: Alexa, ask Chat GPT how Isaac Newton died"
+        speech_text = "You can ask me anything! Just say: Alexa, ask Chat G.P.T. how Isaac Newton died"
         return handler_input.response_builder.speak(speech_text).response
 
 
